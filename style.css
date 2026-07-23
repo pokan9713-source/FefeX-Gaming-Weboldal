@@ -1,1 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
+body{
+    background:#050505;
+    color:white;
+    min-height:100vh;
+}
+
+
+/* Fejléc */
+
+header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    padding:30px;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(10px);
+}
+
+
+.logo{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+
+header h1{
+    font-size:45px;
+    color:#00ffff;
+    text-shadow:0 0 20px cyan;
+}
+
+
+/* Kezdő rész */
+
+.hero{
+
+    text-align:center;
+    padding:80px 20px;
+
+}
+
+
+.hero h2{
+
+    font-size:40px;
+    margin-bottom:20px;
+
+}
+
+
+.hero p{
+
+    font-size:22px;
+    color:#aaa;
+
+}
+
+
+
+/* Csatornák */
+
+.channels{
+
+    padding:50px 10%;
+    text-align:center;
+
+}
+
+
+.channels h2{
+
+    font-size:35px;
+    margin-bottom:40px;
+
+}
+
+
+
+.cards{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.card{
+
+    width:300px;
+
+    background:rgba(255,255,255,0.08);
+
+    border:1px solid rgba(0,255,255,0.4);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    backdrop-filter:blur(15px);
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px cyan;
+
+}
+
+
+
+.card img{
+
+    width:100px;
+
+    height:100px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+
+.card h3{
+
+    margin:20px 0;
+
+    font-size:25px;
+
+}
+
+
+
+.card p{
+
+    color:#ccc;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.card a{
+
+    display:inline-block;
+
+    padding:12px 25px;
+
+    background:red;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+}
+
+
+
+
+/* Közösség */
+
+.social{
+
+    text-align:center;
+
+    padding:50px;
+
+}
+
+
+.social a{
+
+    display:inline-block;
+
+    margin:10px;
+
+    padding:15px 30px;
+
+    background:#5865F2;
+
+    color:white;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+}
+
+
+
+/* Lábléc */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    background:#000;
+
+}
+
+
+/* Telefon */
+
+@media(max-width:700px){
+
+header h1{
+
+    font-size:30px;
+
+}
+
+
+.card{
+
+    width:90%;
+
+}
+
+}
